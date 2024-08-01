@@ -1,0 +1,40 @@
+<mujoco model="mycobot_pi">
+    <default>
+        <!-- Fusion 360 の座標系を MuJoCo に変換します -->
+        <geom type="mesh" xyaxes="1 0 0 0 1 0"/>
+    </default>
+    <asset>
+        <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3" rgb2=".2 .3 .4" width="300" height="300"/>
+        <material name="grid" texture="grid" texrepeat="8 8" reflectance=".2"/>
+        <mesh name="base" file="stl/base.stl" scale=".001 .001 .001"/>
+        <mesh name="link1" file="stl/link1.stl" scale=".001 .001 .001"/>
+        <mesh name="link2" file="stl/link2.stl" scale=".001 .001 .001"/>
+        <mesh name="link3" file="stl/link3.stl" scale=".001 .001 .001"/>
+        <mesh name="link4" file="stl/link4.stl" scale=".001 .001 .001"/>
+        <mesh name="link5" file="stl/link5.stl" scale=".001 .001 .001"/>
+    </asset>
+
+    <worldbody>
+         <geom name="floor" type="plane" pos="0 0 0" size="5 5 0.1" material="grid"/>
+        <light name="top" pos="0 0 2" diffuse="1 1 1" specular=".5 .5 .5" attenuation=".1 .1 .1"/>
+
+        <body name="base">
+            <geom mesh="base"/>
+            <body name="link1">
+                <geom mesh="link1"/>
+                <body name="link2">
+                    <geom mesh="link2"/>
+                    <body name="link3">
+                        <geom mesh="link3"/>
+                        <body name="link4">
+                            <geom mesh="link4"/>
+                            <body name="link5">
+                                <geom mesh="link5"/>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>
