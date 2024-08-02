@@ -18,9 +18,9 @@ double lasty = 0;
 
 // シミュレーションパラメータ
 const double DEG_TO_RAD = M_PI / 180.0;
-const double INCREMENT = 0.25 * DEG_TO_RAD;  // 2°ずつ変化
+const double INCREMENT = 2 * DEG_TO_RAD;  // 2°ずつ変化
 double joint_targets[3] = {0.0, 0.0, 0.0};
-double joint_final[3] = {-50 * DEG_TO_RAD, -120 * DEG_TO_RAD, 80 * DEG_TO_RAD};
+double joint_final[3] = {50 * DEG_TO_RAD, 120 * DEG_TO_RAD, -90 * DEG_TO_RAD};
 
 // マウスボタンコールバック
 void mouse_button(GLFWwindow* window, int button, int act, int mods) {
@@ -93,7 +93,7 @@ void move_joints() {
 }
 
 void set_initial_camera() {
-    cam.azimuth = -135;   // 方位角
+    cam.azimuth = 135;   // 方位角
     cam.elevation = -20; // 高度
     cam.distance = 1.25;   // 距離
     cam.lookat[0] = 0;  // 注視点のx座標
