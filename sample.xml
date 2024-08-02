@@ -58,12 +58,4 @@
         <exclude body1="link5" body2="link6"/>
     </contact>
 
-    <actuator>
-        <position name="joint1" joint="joint1" ctrllimited="true" ctrlrange="-2.88 2.88" kp="10" kv="0.1"/>
-        <position name="joint2" joint="joint2" ctrllimited="true" ctrlrange="-2.88 2.88" kp="10" kv="0.1"/>
-        <position name="joint3" joint="joint3" ctrllimited="true" ctrlrange="-2.88 2.88" kp="10" kv="0.1"/>
-        <position name="joint4" joint="joint4" ctrllimited="true" ctrlrange="-2.88 2.88" kp="10" kv="0.1"/>
-        <position name="joint5" joint="joint5" ctrllimited="true" ctrlrange="-2.88 2.88" kp="10" kv="0.1"/>
-        <position name="joint6" joint="joint6" ctrllimited="true" ctrlrange="-3.14 3.14" kp="10" kv="0.1"/>
-    </actuator>
 </mujoco>
