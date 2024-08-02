@@ -1,4 +1,4 @@
-CMakeFiles/mujocosim.dir/main.cpp.o: \
+CMakeFiles/mujoco.dir/main.cpp.o: \
  /home/wanglab/study/MuJoCo/mujoco_mycobot/main.cpp \
  /usr/include/stdc-predef.h \
  /home/wanglab/.mujoco/mujoco-3.2.0/include/mujoco/mujoco.h \

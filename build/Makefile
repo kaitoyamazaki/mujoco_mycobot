@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mujocosim
+# Target rules for targets named mujoco
 
 # Build rule for target.
-mujocosim: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mujocosim
-.PHONY : mujocosim
+mujoco: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mujoco
+.PHONY : mujoco
 
 # fast build rule for target.
-mujocosim/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/build
-.PHONY : mujocosim/fast
+mujoco/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/build
+.PHONY : mujoco/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mujocosim"
+	@echo "... mujoco"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,3 +1,3 @@
-/home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles/mujocosim.dir
+/home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles/mujoco.dir
 /home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles/edit_cache.dir
 /home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles/rebuild_cache.dir

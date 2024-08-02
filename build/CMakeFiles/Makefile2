@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/wanglab/study/MuJoCo/mujoco_mycobot/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/mujocosim.dir/all
+all: CMakeFiles/mujoco.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/mujocosim.dir/clean
+clean: CMakeFiles/mujoco.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mujocosim.dir
+# Target rules for target CMakeFiles/mujoco.dir
 
 # All Build rule for target.
-CMakeFiles/mujocosim.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles --progress-num=1,2 "Built target mujocosim"
-.PHONY : CMakeFiles/mujocosim.dir/all
+CMakeFiles/mujoco.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles --progress-num=1,2 "Built target mujoco"
+.PHONY : CMakeFiles/mujoco.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mujocosim.dir/rule: cmake_check_build_system
+CMakeFiles/mujoco.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mujocosim.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mujoco.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wanglab/study/MuJoCo/mujoco_mycobot/build/CMakeFiles 0
-.PHONY : CMakeFiles/mujocosim.dir/rule
+.PHONY : CMakeFiles/mujoco.dir/rule
 
 # Convenience name for target.
-mujocosim: CMakeFiles/mujocosim.dir/rule
-.PHONY : mujocosim
+mujoco: CMakeFiles/mujoco.dir/rule
+.PHONY : mujoco
 
 # clean rule for target.
-CMakeFiles/mujocosim.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujocosim.dir/build.make CMakeFiles/mujocosim.dir/clean
-.PHONY : CMakeFiles/mujocosim.dir/clean
+CMakeFiles/mujoco.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mujoco.dir/build.make CMakeFiles/mujoco.dir/clean
+.PHONY : CMakeFiles/mujoco.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
